@@ -2,9 +2,9 @@ library(recommenderlab)
 library(ggplot2)
 library(data.table)
 library(reshape2)
-
-movie_data <- read.csv("movies.csv")
-rating_data <- read.csv("ratings.csv")
+library(tidyverse)
+movie_data <- read_csv("movies.csv")
+rating_data <- read_csv("ratings.csv")
 
 str(movie_data)
 str(rating_data)
